@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+}
+
+p {
+  font-family: $bodytext-font;
+}
+
+a {
+  font-family: $bodytext-font;
+  color: $secondary-color;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: lighten($secondary-color, 20%);
+  }
+}

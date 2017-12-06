@@ -1,0 +1,191 @@
+.button_container {
+    position: absolute;
+    top: 46px;
+    right: 12%;
+    height: $button-height;
+    width: $button-width;
+    cursor: pointer;
+    z-index: 9999;
+    transition: opacity .25s ease;
+
+    &:before {
+        content: "Menu";
+        font-family: $heading-font;
+        font-weight: 700;
+        font-size: 13px;
+        color: $white-color;
+        text-transform: uppercase;
+        position: absolute;
+        right: 134%;
+        top: 19%;
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+
+    &.active {
+        position: fixed;
+
+        .top {
+            transform: translateY(11px) translateX(0) rotate(45deg);
+            background: $white-color;
+        }
+
+        .middle {
+            opacity: 0;
+            background: $white-color;
+        }
+
+        .bottom {
+            transform: translateY(-11px) translateX(0) rotate(-45deg);
+            background: $white-color;
+        }
+    }
+
+    span {
+        background: $white-color;
+        border: none;
+        height: 2px;
+        width: 33px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .35s ease;
+        cursor: pointer;
+
+        &:nth-of-type(2) {
+            top: 11px;
+        }
+
+        &:nth-of-type(3) {
+            top: 22px;
+        }
+    }
+}
+
+
+
+@media(min-width: 768px) {
+    .button_container {
+        top: 61px;
+        right: 8%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .button_container {
+        right: 4%;
+    }
+}
+
+.overlay {
+    position: fixed;
+    background: $primary-color;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 100;
+
+        li {
+            animation: fadeInRight .5s ease forwards;
+            animation-delay: .35s;
+
+            &:nth-of-type(2) {
+                animation-delay: .4s;
+            }
+
+            &:nth-of-type(3) {
+                animation-delay: .45s;
+            }
+
+            &:nth-of-type(4) {
+                animation-delay: .50s;
+            }
+        }
+    }
+
+    nav {
+        position: relative;
+        height: 70%;
+        top: 60%;
+        transform: translateY(-50%);
+        font-size: 50px;
+        font-family: $heading-font;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .soc{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+
+        li {
+            display: block;
+            height: 18%;
+            height: calc(100% / 4);
+            min-height: 50px;
+            position: relative;
+            opacity: 0;
+
+            a {
+                display: block;
+                position: relative;
+                color: $white-color;
+                text-decoration: none;
+                overflow: hidden;
+                font-weight: 700;
+                font-size: 3rem;
+
+                &:hover:after,
+                &:focus:after,
+                &:active:after {
+                    width: 100%;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0%;
+                    transform: translateX(-50%);
+                    height: 3px;
+                    background: $white-color;
+                    transition: .35s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
