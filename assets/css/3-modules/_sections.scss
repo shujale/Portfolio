@@ -46,3 +46,21 @@ section.skills {
     margin-top: 20px;
   }
 }
+//Portfolio section
+
+section.portfolio {
+  padding: $section-padding-fifth;
+}
+//Contact section
+
+section.contact {
+  padding: $section-padding-fifth;
+
+  .section-heading {
+    margin-bottom: 24px;
+  }
+
+  .section-text{
+    margin-bottom: 50px;
+  }
+}

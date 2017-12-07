@@ -1,12 +1,20 @@
 .items-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 
   .item-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 33%;
     height: 87px;
     background-color: $secondary-color;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
 
+    .item-img{
+      height: 44px;
+    }
   }
 }

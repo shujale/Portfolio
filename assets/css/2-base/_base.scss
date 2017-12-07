@@ -25,12 +25,11 @@ a {
   }
 }
 
-.custom-link {
+a.custom-link {
   color: $primary-color;
   font-size: 13px;
   font-weight: 600;
   margin-top: 30px;
-  transition: 0.3s ease-in-out;
 
   &:active,
   &:focus {
@@ -40,6 +39,7 @@ a {
   &:after {
     content: "⟶";
     margin-left: 5px;
+    transition: all .6s ease;
   }
 
   &:hover:after {
