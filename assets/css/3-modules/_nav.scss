@@ -1,7 +1,7 @@
 .button_container {
     position: absolute;
     top: 46px;
-    right: 12%;
+    right: 6%;
     height: $button-height;
     width: $button-width;
     cursor: pointer;
@@ -13,7 +13,7 @@
         font-family: $heading-font;
         font-weight: 700;
         font-size: 13px;
-        color: $white-color;
+        color: $secondary-color;
         text-transform: uppercase;
         position: absolute;
         right: 134%;
@@ -29,22 +29,22 @@
 
         .top {
             transform: translateY(11px) translateX(0) rotate(45deg);
-            background: $white-color;
+            background: $secondary-color;
         }
 
         .middle {
             opacity: 0;
-            background: $white-color;
+            background: $secondary-color;
         }
 
         .bottom {
             transform: translateY(-11px) translateX(0) rotate(-45deg);
-            background: $white-color;
+            background: $secondary-color;
         }
     }
 
     span {
-        background: $white-color;
+        background: $secondary-color;
         border: none;
         height: 2px;
         width: 33px;
@@ -55,11 +55,11 @@
         cursor: pointer;
 
         &:nth-of-type(2) {
-            top: 11px;
+            top: 8px;
         }
 
         &:nth-of-type(3) {
-            top: 22px;
+            top: 16px;
         }
     }
 }

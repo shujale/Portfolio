@@ -4,16 +4,39 @@ html(lang="da")
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
-  title Portfolio website| Sharmarke Hujale 
+  title Portfolio website | Sharmarke Hujale 
   meta(name="description", content="")
   //CSS
-  link(rel="stylesheet", href="/assets/css/main.css")
+  link(rel="stylesheet", href="./assets/css/main.css")
  body
   include ./includes/_nav.jade
-  section.hero
+  //Hero
+  section.hero.default-section-pri
    div.container
-     h1 Passion, dedikation, og en masse kreativitet.
-     h3 Frontend-udvikler & Grafisk designer
+    div.row.heading-area
+     h1.site-heading.height Passion, dedikation, og en masse kreativitet.
+     h3.sub-heading Frontend-udvikler & Grafisk designer
+     a(href="#1", class="scroll scroll_")
+  //About
+  section.about.default-section-sec
+   div.container
+    div.row.heading-area
+     h4.section-heading 01. Om mig
+     p.section-text Hej. Jeg hedder Sharmarke Hujale, grafisk designer & frontend-udvikler bosat i Aarhus. Til dagligt studerer jeg som multimediedesigner på Erhvervsakademiet i Aarhus.
+     a(href="#", class="custom-link") Lær mere
+  //Skills
+  section.skills.default-section-pri
+   div.container
+    div.row.text-center
+     h4.section-heading 02. Skills
+     br
+     h4.heading-dot Programmering.
+     br 
+     div.items-container
+      div.item-box
+      div.item-box
+      div.item-box
     
   //JS
-  script(src="/assets/js/function.js")
+  include ./includes/_scripts.jade
+ 

@@ -1,3 +1,5 @@
+//Typography
+
 h1,
 h2,
 h3,
@@ -10,14 +12,106 @@ h6 {
 p {
   font-family: $bodytext-font;
 }
+//Link
 
 a {
   font-family: $bodytext-font;
   color: $secondary-color;
+  text-decoration: none;
 
   &:active,
-  &:focus,
-  &:hover {
+  &:focus {
     color: lighten($secondary-color, 20%);
   }
+}
+
+.custom-link {
+  color: $primary-color;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: 0.3s ease-in-out;
+
+  &:active,
+  &:focus {
+    color: lighten($primary-color, 20%);
+  }
+
+  &:after {
+    content: "⟶";
+    margin-left: 5px;
+  }
+
+  &:hover:after {
+    margin-left: 40px;
+  }
+}
+//Logo
+
+.logo {
+  max-width: 100%;
+  width: 50px;
+  height: 80px;
+  z-index: 99;
+  position: absolute;
+  top: 14px;
+  left: 33px;
+}
+//With regard to text & content
+
+.heading-area {
+  text-align: center;
+  padding: 0 60px;
+  line-height: 1.2;
+}
+
+.section-heading {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heading-dot {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-center {
+  text-align: center;
+}
+//Container
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media(min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media(min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media(min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+//Row
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+//Space
+
+.height {
+  margin-bottom: 30px;
 }

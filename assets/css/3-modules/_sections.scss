@@ -1,7 +1,48 @@
-section.default-section-pri{
+//Deafult section
+
+section.default-section-pri {
   background-color: $primary-color;
+  color: $secondary-color;
 }
 
-section.default-section-sec{
+section.default-section-sec {
   background-color: $secondary-color;
+  color: $primary-color;
+}
+//Hero section
+
+section.hero {
+  padding: $section-padding-two;
+
+  .site-heading {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .sub-heading {
+    font-family: $bodytext-font;
+    font-weight: 600;
+  }
+}
+//About section
+
+section.about {
+  padding: $section-padding-fifth;
+
+  .section-heading {
+    margin-bottom: 20px;
+  }
+
+  .section-text {
+    margin-bottom: 30px;
+  }
+}
+//Skills section
+
+section.skills {
+  padding: $section-padding-fifth;
+
+  .heading-dot {
+    margin-top: 20px;
+  }
 }

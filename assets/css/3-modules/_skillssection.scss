@@ -1,0 +1,12 @@
+.items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .item-box {
+    width: 33%;
+    height: 87px;
+    background-color: $secondary-color;
+
+  }
+}

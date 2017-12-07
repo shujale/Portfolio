@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
 @font-face {
-  font-family: "League Spartan Bold";
+  font-family: "League Spartan";
   src: url("/fonts/LeagueSpartan-Bold.otf") format("otf"); }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -42,21 +43,91 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "League Spartan Bold", sans-serif; }
+  font-family: "League Spartan", sans-serif; }
 
 p {
-  font-family: "Libre Baskervill", serif; }
+  font-family: "Libre Baskerville", serif; }
 
 a {
-  font-family: "Libre Baskervill", serif;
-  color: #162133; }
-  a:active, a:focus, a:hover {
+  font-family: "Libre Baskerville", serif;
+  color: #eec843;
+  text-decoration: none; }
+  a:active, a:focus {
+    color: #f6e3a1; }
+
+.custom-link {
+  color: #162133;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 30px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .custom-link:active, .custom-link:focus {
     color: #354f7a; }
+  .custom-link:after {
+    content: "⟶";
+    margin-left: 5px; }
+  .custom-link:hover:after {
+    margin-left: 40px; }
+
+.logo {
+  max-width: 100%;
+  width: 50px;
+  height: 80px;
+  z-index: 99;
+  position: absolute;
+  top: 14px;
+  left: 33px; }
+
+.heading-area {
+  text-align: center;
+  padding: 0 60px;
+  line-height: 1.2; }
+
+.section-heading {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.heading-dot {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.text-center {
+  text-align: center; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.height {
+  margin-bottom: 30px; }
 
 .button_container {
   position: absolute;
   top: 46px;
-  right: 12%;
+  right: 6%;
   height: 27px;
   width: 35px;
   cursor: pointer;
@@ -66,10 +137,10 @@ a {
   transition: opacity .25s ease; }
   .button_container:before {
     content: "Menu";
-    font-family: "League Spartan Bold", sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: 700;
     font-size: 13px;
-    color: #ffffff;
+    color: #eec843;
     text-transform: uppercase;
     position: absolute;
     right: 134%;
@@ -82,17 +153,17 @@ a {
       -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
       -ms-transform: translateY(11px) translateX(0) rotate(45deg);
       transform: translateY(11px) translateX(0) rotate(45deg);
-      background: #ffffff; }
+      background: #eec843; }
     .button_container.active .middle {
       opacity: 0;
-      background: #ffffff; }
+      background: #eec843; }
     .button_container.active .bottom {
       -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
       -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
       transform: translateY(-11px) translateX(0) rotate(-45deg);
-      background: #ffffff; }
+      background: #eec843; }
   .button_container span {
-    background: #ffffff;
+    background: #eec843;
     border: none;
     height: 2px;
     width: 33px;
@@ -104,9 +175,9 @@ a {
     transition: all .35s ease;
     cursor: pointer; }
     .button_container span:nth-of-type(2) {
-      top: 11px; }
+      top: 8px; }
     .button_container span:nth-of-type(3) {
-      top: 22px; }
+      top: 16px; }
 
 @media (min-width: 768px) {
   .button_container {
@@ -119,7 +190,7 @@ a {
 
 .overlay {
   position: fixed;
-  background: #eec843;
+  background: #162133;
   top: 0;
   left: 0;
   width: 100%;
@@ -157,7 +228,7 @@ a {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 50px;
-    font-family: "League Spartan Bold", sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: 400;
     text-align: center; }
   .overlay .soc {
@@ -229,9 +300,139 @@ a {
     left: 0; } }
 
 section.default-section-pri {
-  background-color: #eec843; }
+  background-color: #162133;
+  color: #eec843; }
 
 section.default-section-sec {
-  background-color: #162133; }
+  background-color: #eec843;
+  color: #162133; }
+
+section.hero {
+  padding: 200px 0; }
+  section.hero .site-heading {
+    font-size: 24px;
+    font-weight: 800; }
+  section.hero .sub-heading {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600; }
+
+section.about {
+  padding: 50px 0; }
+  section.about .section-heading {
+    margin-bottom: 20px; }
+  section.about .section-text {
+    margin-bottom: 30px; }
+
+section.skills {
+  padding: 50px 0; }
+  section.skills .heading-dot {
+    margin-top: 20px; }
+
+.items-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .items-container .item-box {
+    width: 33%;
+    height: 87px;
+    background-color: #eec843; }
+
+.cd-container {
+  width: 90%;
+  max-width: 768px;
+  margin: 2em auto; }
+
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both; }
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  border-radius: 50px;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #1d1d1d url(~/assets/images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  -o-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  z-index: 1000; }
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1; }
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5; }
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px; } }
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px; } }
+
+.scroll_ {
+  cursor: pointer;
+  width: 17px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #eec843;
+  position: absolute;
+  left: 46%;
+  margin-top: 50px; }
+  .scroll_:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10px;
+    margin: 5px auto;
+    background-color: #eec843;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -moz-animation-name: fadeOutDown;
+    -o-animation-name: fadeOutDown;
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown; }
 
 /*# sourceMappingURL=main.css.map */
