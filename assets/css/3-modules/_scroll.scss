@@ -1,35 +1,37 @@
-.scroll_{
-    cursor: pointer;
-    width: 17px;
-    height: 33px;
-    border-radius: 50px;
-    border: 2px solid $secondary-color;
-    position: absolute;
-    left: 46%;
-    margin-top: 50px;
+.scroll_ {
+  cursor: pointer;
+  width: 17px;
+  height: 33px;
+  border-radius: 50px;
+  border: 2px solid $secondary-color;
+  position: absolute;
+  left: 46%;
+  margin-top: 50px;
 
-    &:before {
-        content: "";
-        display: block;
-        width: 2px;
-        height: 10px;
-        margin: 5px auto;
-        background-color: $secondary-color;
-        -moz-animation-duration: 1s;
-        -o-animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -moz-animation-fill-mode: both;
-        -o-animation-fill-mode: both;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -moz-animation-iteration-count: infinite;
-        -o-animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -moz-animation-name: fadeOutDown;
-        -o-animation-name: fadeOutDown;
-        -webkit-animation-name: fadeOutDown;
-        animation-name: fadeOutDown;
-    }
+  &:before {}
+}
+
+.scroll:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 10px;
+  margin: 5px auto;
+  background-color: $secondary-color;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-name: fadeOutDown;
+  -o-animation-name: fadeOutDown;
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
 }

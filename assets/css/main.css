@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
 @font-face {
-  font-family: 'LeagueSpartanBold', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   src: url("../fonts/LeagueSpartanBold.otf") format("otf"); }
 
 * {
@@ -47,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "LeagueSpartanBold", sans-serif; }
+  font-family: "League Spartan", sans-serif; }
 
 p {
   font-family: "Libre Baskerville", serif; }
@@ -141,7 +141,7 @@ a.custom-link {
   transition: opacity .25s ease; }
   .button_container:before {
     content: "Menu";
-    font-family: "LeagueSpartanBold", sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: 700;
     font-size: 13px;
     color: #eec843;
@@ -232,7 +232,7 @@ a.custom-link {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 50px;
-    font-family: "LeagueSpartanBold", sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: 400;
     text-align: center; }
   .overlay .soc {
@@ -503,29 +503,30 @@ section.contact {
   position: absolute;
   left: 46%;
   margin-top: 50px; }
-  .scroll_:before {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 10px;
-    margin: 5px auto;
-    background-color: #eec843;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -moz-animation-name: fadeOutDown;
-    -o-animation-name: fadeOutDown;
-    -webkit-animation-name: fadeOutDown;
-    animation-name: fadeOutDown; }
+
+.scroll:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 10px;
+  margin: 5px auto;
+  background-color: #eec843;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-name: fadeOutDown;
+  -o-animation-name: fadeOutDown;
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown; }
 
 @font-face {
   font-family: 'si';
