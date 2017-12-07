@@ -340,7 +340,8 @@ section.contact {
   section.contact .section-heading {
     margin-bottom: 24px; }
   section.contact .section-text {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    font-weight: 600; }
 
 .items-container {
   display: -webkit-box;
