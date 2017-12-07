@@ -47,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "League Spartan", sans-serif; }
+  font-family: "LeagueSpartanBold", sans-serif; }
 
 p {
   font-family: "Libre Baskerville", serif; }
@@ -141,7 +141,7 @@ a.custom-link {
   transition: opacity .25s ease; }
   .button_container:before {
     content: "Menu";
-    font-family: "League Spartan", sans-serif;
+    font-family: "LeagueSpartanBold", sans-serif;
     font-weight: 700;
     font-size: 13px;
     color: #eec843;
@@ -232,7 +232,7 @@ a.custom-link {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 50px;
-    font-family: "League Spartan", sans-serif;
+    font-family: "LeagueSpartanBold", sans-serif;
     font-weight: 400;
     text-align: center; }
   .overlay .soc {
@@ -341,7 +341,7 @@ section.contact {
     margin-bottom: 24px; }
   section.contact .section-text {
     margin-bottom: 50px;
-    font-weight: 600; }
+    font-weight: 700; }
 
 .items-container {
   display: -webkit-box;
