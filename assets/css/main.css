@@ -464,7 +464,7 @@ section.contact {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: #1d1d1d url(~/assets/images/cd-top-arrow.svg) no-repeat center 50%;
+  background: #1d1d1d url(./assets/images/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -493,40 +493,6 @@ section.contact {
     width: 60px;
     right: 30px;
     bottom: 30px; } }
-
-.scroll_ {
-  cursor: pointer;
-  width: 17px;
-  height: 33px;
-  border-radius: 50px;
-  border: 2px solid #eec843;
-  position: absolute;
-  left: 46%;
-  margin-top: 50px; }
-
-.scroll:before {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 10px;
-  margin: 5px auto;
-  background-color: #eec843;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -moz-animation-name: fadeOutDown;
-  -o-animation-name: fadeOutDown;
-  -webkit-animation-name: fadeOutDown;
-  animation-name: fadeOutDown; }
 
 @font-face {
   font-family: 'si';
@@ -591,5 +557,30 @@ section.contact {
 
 .soc-instagram:before {
   content: '\e057'; }
+
+.scroll-down {
+  cursor: pointer;
+  width: 17px;
+  height: 33px;
+  border-radius: 50px;
+  border: 2px solid #eec843;
+  position: absolute;
+  left: 46%;
+  margin-top: 50px; }
+  .scroll-down:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10px;
+    margin: 5px auto;
+    background-color: #eec843;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown; }
 
 /*# sourceMappingURL=main.css.map */
