@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
 @font-face {
   font-family: "League Spartan";
-  src: url("../fonts/LeagueSpartanBold.otf") format("otf"); }
+  src: url("./fonts/LeagueSpartanBold.otf") format("otf"); }
 
 * {
   -webkit-box-sizing: border-box;
