@@ -14,6 +14,10 @@ section.default-section-sec {
 section.hero {
   padding: $section-padding-two;
 
+  .me {
+    display: none;
+  }
+
   .site-heading {
     font-size: 24px;
     font-weight: 800;
@@ -49,6 +53,19 @@ section.hero {
 
     .sub-heading {
       font-size: 39px;
+    }
+  }
+}
+@media(min-width: 1200px) {
+  section.hero {
+    .me {
+      display: block;
+      max-width: 615px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      right: -315px;
+      clip: rect(-8px,301px,818px,19px);
     }
   }
 }
@@ -99,10 +116,12 @@ section.skills {
   }
 }
 //Portfolio section
+
 section.portfolio {
   padding: $section-padding-fifth;
 }
 //Contact section
+
 section.contact {
   padding: $section-padding-fifth;
 
