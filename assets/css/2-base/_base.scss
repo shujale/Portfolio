@@ -39,24 +39,48 @@ a.custom-link {
   &:after {
     content: "⟶";
     margin-left: 5px;
-    transition: all .6s ease;
+    transition: all 0.6s ease;
   }
 
   &:hover:after {
     margin-left: 40px;
   }
 }
+
+@media(min-width: 768px)
+{
+  a.custom-link{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  a.custom-link{
+    font-size: 20px;
+  }
+}
+
 //Logo
 
 .logo {
   max-width: 100%;
   width: 50px;
   height: 80px;
-  z-index: 99;
+  z-index: 999;
   position: absolute;
   top: 14px;
   left: 33px;
 }
+
+@media(min-width: 768px)
+{
+  .logo{
+    width: 60px;
+    top: 25px;
+    left: 65px;
+  }
+}
+
 //With regard to text & content
 
 .heading-area {
@@ -81,6 +105,25 @@ a.custom-link {
 .text-center {
   text-align: center;
 }
+
+@media(min-width: 768px) {
+  .section-heading {
+    font-size: 15px;
+  }
+
+  .heading-dot {
+    font-size: 15px;
+  }
+}
+
+@media(min-width: 992px)
+{
+  .heading-area{
+    text-align: left;
+    padding: 0 20px;
+  }
+}
+
 //Container
 
 .container {

@@ -148,13 +148,13 @@
             opacity: 0;
 
             a {
-                display: block;
                 position: relative;
                 color: $white-color;
                 text-decoration: none;
                 overflow: hidden;
+                font-family: $heading-font;
                 font-weight: 700;
-                font-size: 3rem;
+                font-size: 2rem;
 
                 &:hover:after,
                 &:focus:after,

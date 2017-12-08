@@ -24,6 +24,34 @@ section.hero {
     font-weight: 600;
   }
 }
+@media(min-width: 768px) {
+  section.hero {
+    .site-heading {
+      font-size: 35px;
+    }
+
+    .sub-heading {
+      font-size: 25px;
+    }
+  }
+}
+@media(min-width: 992px) {
+  section.hero {
+    padding: $section-padding-one;
+
+    .site-heading {
+      font-size: 72px;
+    }
+
+    .height {
+      margin-bottom: 0;
+    }
+
+    .sub-heading {
+      font-size: 39px;
+    }
+  }
+}
 //About section
 
 section.about {
@@ -37,6 +65,23 @@ section.about {
     margin-bottom: 30px;
   }
 }
+@media(min-width: 768px) {
+  section.about {
+    .section-text {
+      font-size: 20px;
+      line-height: 2;
+    }
+  }
+}
+@media (min-width: 992px) {
+  section.about {
+    padding: $section-padding-fourth;
+
+    .section-text {
+      font-size: 30px;
+    }
+  }
+}
 //Skills section
 
 section.skills {
@@ -46,13 +91,18 @@ section.skills {
     margin-top: 20px;
   }
 }
+@media(max-width: 767px) {
+  section.skills {
+    .heading-area {
+      padding: 0;
+    }
+  }
+}
 //Portfolio section
-
 section.portfolio {
   padding: $section-padding-fifth;
 }
 //Contact section
-
 section.contact {
   padding: $section-padding-fifth;
 
@@ -60,8 +110,22 @@ section.contact {
     margin-bottom: 24px;
   }
 
-  .section-text{
+  .section-text {
     margin-bottom: 50px;
     font-weight: 700;
+  }
+}
+@media(min-width: 768px) {
+  section.contact {
+    .section-text {
+      font-size: 25px;
+    }
+  }
+}
+@media(min-width: 992px) {
+  section.contact {
+    .section-text {
+      font-size: 35px;
+    }
   }
 }
