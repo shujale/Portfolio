@@ -13,8 +13,12 @@
     display: block;
     width: 2px;
     height: 10px;
-    margin: 10px auto 5px;
+    margin: 5px auto;
     background-color: $secondary-color;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: fadeOutDown;
   }
 }
 @media(min-width: 768px) {
@@ -25,7 +29,6 @@
     &:after {
       width: 3px;
       height: 12px;
-      margin-top: 20px;
     }
   }
 }
