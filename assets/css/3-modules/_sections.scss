@@ -104,6 +104,10 @@ section.about {
 section.hero-about {
   padding: $section-padding-fourth;
 
+  .header-area{
+    text-align: left;
+  }
+
   .section-text {
     font-family: $bodytext-font;
     font-size: 20px;
