@@ -1,6 +1,10 @@
 //General
+*{
+  box-sizing: border-box;
+}
+
 body{
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 //Typography
@@ -125,7 +129,6 @@ a.custom-link {
 {
   .heading-area{
     text-align: left;
-    padding: 0 20px;
   }
 }
 

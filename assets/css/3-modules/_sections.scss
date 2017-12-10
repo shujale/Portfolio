@@ -95,7 +95,31 @@ section.about {
     padding: $section-padding-fourth;
 
     .section-text {
-      font-size: 30px;
+      font-size: 23px;
+    }
+  }
+}
+//About page
+
+section.hero-about {
+  padding: $section-padding-fourth;
+
+  .section-text {
+    font-family: $bodytext-font;
+    font-size: 20px;
+  }
+}
+@media(min-width: 768px) {
+  section.hero-about {
+    padding: $section-padding-three;
+
+
+    .section-heading {
+      font-size: 25px;
+    }
+
+    .section-text {
+      font-size: 50px;
     }
   }
 }
@@ -120,8 +144,37 @@ section.skills {
 section.portfolio {
   padding: $section-padding-fifth;
 }
-//Contact section
+//Porfolio page
 
+section.hero-portfolio {
+  padding: $section-padding-fourth;
+
+  .section-text {
+    font-family: $bodytext-font;
+    font-size: 20px;
+  }
+}
+@media(min-width: 768px) {
+  section.hero-portfolio {
+    padding: $section-padding-three;
+
+    .section-heading {
+      font-size: 25px;
+    }
+
+    .section-text {
+      font-size: 50px;
+    }
+  }
+}
+@media(min-width: 1200px) {
+  section.hero-portfolio {
+    .height {
+      margin-bottom: 10px;
+    }
+  }
+}
+//Contact section
 section.contact {
   padding: $section-padding-fifth;
 
