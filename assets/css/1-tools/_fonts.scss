@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
-@font-face {
-  font-family: 'League Spartan', sans-serif;
-  src: url('../fonts/LeagueSpartan.otf') format('otf'),
-       url('../fonts/LeagueSpartan.tff') format('ttf'),
-       url('../fonts/LeagueSpartan.woff') format('woff');
-}
+
+//@font-face {
+  //font-family: 'League Spartan', sans-serif;
+  //src: url('../fonts/LeagueSpartan.otf') format('otf'),
+      // url('../fonts/LeagueSpartan.tff') format('ttf'),
+       //url('../fonts/LeagueSpartan.woff') format('woff');
+//}
+@include font-face(LeagueSpartan, fonts/LeagueSpartan, ttf otf woff);
