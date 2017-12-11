@@ -104,7 +104,6 @@ section.about {
 section.hero-about {
   padding: $section-padding-fourth;
 
-
   .section-text {
     font-family: $bodytext-font;
     font-size: 20px;
@@ -113,7 +112,6 @@ section.hero-about {
 @media(min-width: 768px) {
   section.hero-about {
     padding: $section-padding-three;
-
 
     .section-heading {
       font-size: 25px;
@@ -175,7 +173,52 @@ section.hero-portfolio {
     }
   }
 }
+//specific portfolio project
+
+section.portfolio-specific {
+  padding: $section-padding-three;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: relative;
+
+  .heading-area {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 25px;
+  }
+}
+
+@media(min-width: 768px)
+{
+
+  section.portfolio-specific {
+    padding: $section-padding-three;
+
+    .heading-area {
+      font-size: 50px;
+    }
+  }
+}
+
+@media(min-width: 992px)
+{
+  section.portfolio-specific{
+    padding: $section-padding-two;
+    .heading-area{
+      font-size: 78px;
+      text-align: center;
+    }
+  }
+}
+
 //Contact section
+
 section.contact {
   padding: $section-padding-fifth;
 

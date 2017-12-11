@@ -160,6 +160,14 @@ a.custom-link {
 .height {
   margin-bottom: 30px; }
 
+.overlay_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); }
+
 .button_container {
   position: absolute;
   top: 46px;
@@ -438,6 +446,35 @@ section.hero-portfolio {
 @media (min-width: 1200px) {
   section.hero-portfolio .height {
     margin-bottom: 10px; } }
+
+section.portfolio-specific {
+  padding: 150px 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: relative; }
+  section.portfolio-specific .heading-area {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 25px; }
+
+@media (min-width: 768px) {
+  section.portfolio-specific {
+    padding: 150px 0; }
+    section.portfolio-specific .heading-area {
+      font-size: 50px; } }
+
+@media (min-width: 992px) {
+  section.portfolio-specific {
+    padding: 200px 0; }
+    section.portfolio-specific .heading-area {
+      font-size: 78px;
+      text-align: center; } }
 
 section.contact {
   padding: 50px 0; }
