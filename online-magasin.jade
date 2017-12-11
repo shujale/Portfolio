@@ -1,0 +1,27 @@
+html(lang="da")
+  head 
+    // Meta tags
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title Skab et online Magazine | Sharmarke Hujale
+    meta(name="description", content="Projektet bestod i at designe og udvikle et online magasin til mine medstuderende.")
+    // CSS
+    link(rel="stylesheet", href="./assets/css/main.css")
+    
+  body
+    // Navigation
+    include ./includes/_nav.jade
+    
+    //Hero
+    section.portfolio-specific
+     div.container
+      div.row.heading-area.wow.fadeInUp
+       h1 Online Magasin
+     
+    
+    // Contact
+    include ./includes/_contact.jade
+    a(href="#0", class="cd-top cd-is-visible") Top
+    // JS
+    include ./includes/_scripts.jade
