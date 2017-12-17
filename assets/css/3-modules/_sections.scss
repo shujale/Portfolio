@@ -249,12 +249,17 @@ section.contact {
   }
 
   section.portfolio-content {
-    .case-study-wrapper {
-      h2{
-        font-size: 40px;
-        margin: 40px 0;
+
+    .heading-area{
+      padding: 0 150px;
+      .case-study-wrapper {
+        h2{
+          font-size: 40px;
+          margin: 40px 0;
+        }
       }
     }
+
   }
 
   section.contact {

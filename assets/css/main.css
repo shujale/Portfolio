@@ -3049,9 +3049,11 @@ section.contact {
     section.portfolio-specific .heading-area {
       font-size: 78px;
       text-align: center; }
-  section.portfolio-content .case-study-wrapper h2 {
-    font-size: 40px;
-    margin: 40px 0; }
+  section.portfolio-content .heading-area {
+    padding: 0 150px; }
+    section.portfolio-content .heading-area .case-study-wrapper h2 {
+      font-size: 40px;
+      margin: 40px 0; }
   section.contact .section-text {
     font-size: 35px; } }
 
