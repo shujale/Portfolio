@@ -29,6 +29,7 @@ section.hero {
   }
 }
 //About section
+
 section.about {
   padding: $section-padding-fifth;
 
@@ -92,6 +93,40 @@ section.portfolio-specific {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 25px;
+  }
+}
+
+section.portfolio-content {
+  padding: $section-padding-fourth;
+
+  .heading-area {
+    text-align: left;
+  }
+
+  .case-study-wrapper {
+    h2,
+    h3,
+    h4 {
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      color: $white-color;
+      line-height: 2;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      margin-bottom: 20px;
+    }
   }
 }
 //Contact section
@@ -205,6 +240,15 @@ section.contact {
     }
   }
 
+  section.portfolio-content {
+    .case-study-wrapper {
+      h2{
+        font-size: 40px;
+        margin: 40px 0;
+      }
+    }
+  }
+
   section.contact {
     .section-text {
       font-size: 35px;
@@ -227,6 +271,16 @@ section.contact {
   section.hero-portfolio {
     .height {
       margin-bottom: 10px;
+    }
+  }
+}
+
+section.portfolio-content {
+  .case-study-wrapper {
+    img {
+      max-width: 350px;
+      margin-bottom: 20px;
+      margin-right: 20px;
     }
   }
 }

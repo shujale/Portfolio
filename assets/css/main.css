@@ -2652,6 +2652,22 @@ a.custom-link {
   a.custom-link:hover:after {
     margin-left: 40px; }
 
+a.custom-link-sec {
+  color: #eec843;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 30px; }
+  a.custom-link-sec:active, a.custom-link-sec:focus {
+    color: #f6e3a1; }
+  a.custom-link-sec:after {
+    content: "⟶";
+    margin-left: 5px;
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease; }
+  a.custom-link-sec:hover:after {
+    margin-left: 40px; }
+
 @media (min-width: 768px) {
   a.custom-link {
     font-size: 16px; } }
@@ -2963,6 +2979,27 @@ section.portfolio-specific {
     padding-right: 15px;
     font-size: 25px; }
 
+section.portfolio-content {
+  padding: 100px 0; }
+  section.portfolio-content .heading-area {
+    text-align: left; }
+  section.portfolio-content .case-study-wrapper h2,
+  section.portfolio-content .case-study-wrapper h3,
+  section.portfolio-content .case-study-wrapper h4 {
+    margin: 20px 0; }
+  section.portfolio-content .case-study-wrapper h2 {
+    font-size: 20px; }
+  section.portfolio-content .case-study-wrapper p {
+    color: #ffffff;
+    line-height: 2;
+    font-size: 15px;
+    margin-bottom: 20px; }
+  section.portfolio-content .case-study-wrapper img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-bottom: 20px; }
+
 section.contact {
   padding: 50px 0; }
   section.contact .section-heading {
@@ -3018,6 +3055,9 @@ section.contact {
     section.portfolio-specific .heading-area {
       font-size: 78px;
       text-align: center; }
+  section.portfolio-content .case-study-wrapper h2 {
+    font-size: 40px;
+    margin: 40px 0; }
   section.contact .section-text {
     font-size: 35px; } }
 
@@ -3032,6 +3072,11 @@ section.contact {
     clip: rect(-8px, 301px, 818px, 19px); }
   section.hero-portfolio .height {
     margin-bottom: 10px; } }
+
+section.portfolio-content .case-study-wrapper img {
+  max-width: 350px;
+  margin-bottom: 20px;
+  margin-right: 20px; }
 
 @media (max-width: 767px) {
   section.skills .heading-area {
