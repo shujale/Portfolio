@@ -2920,32 +2920,6 @@ section.hero {
     font-family: "Libre Baskerville", serif;
     font-weight: 600; }
 
-@media (min-width: 768px) {
-  section.hero .site-heading {
-    font-size: 35px; }
-  section.hero .sub-heading {
-    font-size: 25px; } }
-
-@media (min-width: 992px) {
-  section.hero {
-    padding: 300px 0; }
-    section.hero .site-heading {
-      font-size: 72px; }
-    section.hero .height {
-      margin-bottom: 0; }
-    section.hero .sub-heading {
-      font-size: 39px; } }
-
-@media (min-width: 1200px) {
-  section.hero .me {
-    display: block;
-    max-width: 615px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: -315px;
-    clip: rect(-8px, 301px, 818px, 19px); } }
-
 section.about {
   padding: 50px 0; }
   section.about .section-heading {
@@ -2953,39 +2927,16 @@ section.about {
   section.about .section-text {
     margin-bottom: 30px; }
 
-@media (min-width: 768px) {
-  section.about .section-text {
-    font-size: 20px;
-    line-height: 2; } }
-
-@media (min-width: 992px) {
-  section.about {
-    padding: 100px 0; }
-    section.about .section-text {
-      font-size: 23px; } }
-
 section.hero-about {
   padding: 100px 0; }
   section.hero-about .section-text {
     font-family: "Libre Baskerville", serif;
     font-size: 20px; }
 
-@media (min-width: 768px) {
-  section.hero-about {
-    padding: 150px 0; }
-    section.hero-about .section-heading {
-      font-size: 25px; }
-    section.hero-about .section-text {
-      font-size: 50px; } }
-
 section.skills {
   padding: 50px 0; }
   section.skills .heading-dot {
     margin-top: 20px; }
-
-@media (max-width: 767px) {
-  section.skills .heading-area {
-    padding: 0; } }
 
 section.portfolio {
   padding: 50px 0; }
@@ -2995,18 +2946,6 @@ section.hero-portfolio {
   section.hero-portfolio .section-text {
     font-family: "Libre Baskerville", serif;
     font-size: 20px; }
-
-@media (min-width: 768px) {
-  section.hero-portfolio {
-    padding: 150px 0; }
-    section.hero-portfolio .section-heading {
-      font-size: 25px; }
-    section.hero-portfolio .section-text {
-      font-size: 50px; } }
-
-@media (min-width: 1200px) {
-  section.hero-portfolio .height {
-    margin-bottom: 10px; } }
 
 section.portfolio-specific {
   padding: 150px 0;
@@ -3024,19 +2963,6 @@ section.portfolio-specific {
     padding-right: 15px;
     font-size: 25px; }
 
-@media (min-width: 768px) {
-  section.portfolio-specific {
-    padding: 150px 0; }
-    section.portfolio-specific .heading-area {
-      font-size: 50px; } }
-
-@media (min-width: 992px) {
-  section.portfolio-specific {
-    padding: 200px 0; }
-    section.portfolio-specific .heading-area {
-      font-size: 78px;
-      text-align: center; } }
-
 section.contact {
   padding: 50px 0; }
   section.contact .section-heading {
@@ -3046,12 +2972,70 @@ section.contact {
     font-weight: 700; }
 
 @media (min-width: 768px) {
+  section.hero .site-heading {
+    font-size: 35px; }
+  section.hero .sub-heading {
+    font-size: 25px; }
+  section.about .section-text {
+    font-size: 20px;
+    line-height: 2; }
+  section.hero-about {
+    padding: 150px 0; }
+    section.hero-about .section-heading {
+      font-size: 25px; }
+    section.hero-about .section-text {
+      font-size: 50px; }
+  section.skills .heading-dot {
+    margin-top: 69px; }
+  section.hero-portfolio {
+    padding: 150px 0; }
+    section.hero-portfolio .section-heading {
+      font-size: 25px; }
+    section.hero-portfolio .section-text {
+      font-size: 50px; }
+  section.portfolio-specific {
+    padding: 150px 0; }
+    section.portfolio-specific .heading-area {
+      font-size: 50px; }
   section.contact .section-text {
     font-size: 25px; } }
 
 @media (min-width: 992px) {
+  section.hero {
+    padding: 300px 0; }
+    section.hero .site-heading {
+      font-size: 72px; }
+    section.hero .height {
+      margin-bottom: 0; }
+    section.hero .sub-heading {
+      font-size: 39px; }
+  section.about {
+    padding: 100px 0; }
+    section.about .section-text {
+      font-size: 23px; }
+  section.portfolio-specific {
+    padding: 200px 0; }
+    section.portfolio-specific .heading-area {
+      font-size: 78px;
+      text-align: center; }
   section.contact .section-text {
     font-size: 35px; } }
+
+@media (min-width: 1200px) {
+  section.hero .me {
+    display: block;
+    max-width: 615px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: -315px;
+    clip: rect(-8px, 301px, 818px, 19px); }
+  section.hero-portfolio .height {
+    margin-bottom: 10px; } }
+
+@media (max-width: 767px) {
+  section.skills .heading-area {
+    padding: 0; } }
 
 .items-container {
   display: -webkit-box;
